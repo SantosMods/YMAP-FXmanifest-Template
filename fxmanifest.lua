@@ -1,52 +1,47 @@
 --[[
-    DeputyMods YMAP Template for FiveM
-    ------------------------------------
-    This is a starter FXManifest file for new users making YMAPs in FiveM.
-    DeputyMods recommends following this format for clean and optimized resources.
+    SantosMods.dev YMAP Template for FiveM
+    --------------------------------------
+    Starter FXManifest for clean, optimized YMAP resources.
 ]]--
 
-fx_version 'cerulean' -- Latest recommended FX version
-game 'gta5'           -- Required game declaration
+fx_version 'cerulean'
+game 'gta5'
 
-author 'DeputyMods'   -- Your name/team (change as needed)
-description 'DeputyMods YMAP Template for FiveM' 
-version '1.0.0'       -- Change version when updating
+author 'SantosMods.dev'
+description 'SantosMods.dev YMAP Template for FiveM'
+version '1.0.0'
 
-this_is_a_map 'yes'   -- Essential for YMAPs
+this_is_a_map 'yes'
 
--- Optional dependencies (Uncomment if needed)
-dependencies {
-    -- 'some_dependency' -- Example: A required map mod
-}
+-- Optional dependencies
+-- dependencies {
+--     'some_dependency' -- Example: Required map mod
+-- }
 
--- Client-side scripts (if needed)
-client_scripts {
-    -- 'client.lua' -- Uncomment if you need additional client logic
-}
+-- Optional scripts
+-- client_scripts {
+--     'client.lua'
+-- }
 
--- Server-side scripts (if needed)
-server_scripts {
-    -- 'server.lua' -- Uncomment if you need server-side logic
-}
+-- server_scripts {
+--     'server.lua'
+-- }
 
-lua54 'yes' -- Enables Lua 5.4 (recommended for security and optimization)
+lua54 'yes'
 
--- Prevents YMAP files from being encrypted in asset escrow (for resource protection)
 escrow_ignore {
     'stream/*.ymap'
 }
 
--- Ensures compatibility with Tebex assets (if applicable)
-dependency '/assetpacks' 
+-- Required for Tebex assets (optional unless needed)
+-- dependency '/assetpacks'
 
 --[[
-    HOW TO USE:
+    USAGE INSTRUCTIONS:
     1. Place your YMAP files inside the 'stream' folder.
-    2. Rename this resource folder (e.g., `ymap_name`).
-    3. Add `ensure ymap_name` to your server.cfg.
-    4. Restart your server and enjoy your custom map!
-    
-    Need help? Join DeputyMods for support!
-    Discord: https://discord.gg/D3ruwr8dbA
-]]--
+    2. Rename this resource folder (e.g., `ymap_example`).
+    3. Add `ensure ymap_example` to your server.cfg.
+    4. Restart your server.
 
+    Support: https://discord.gg/jvchRsD3C5
+]]--
