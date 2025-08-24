@@ -12,6 +12,7 @@ description 'SantosMods.dev YMAP Template for FiveM'
 version '1.0.0'
 
 this_is_a_map 'yes'
+dependency '/assetpacks'
 
 -- Optional dependencies
 -- dependencies {
@@ -32,9 +33,6 @@ lua54 'yes'
 escrow_ignore {
     'stream/*.ymap'
 }
-
--- Required for Tebex assets (optional unless needed)
--- dependency '/assetpacks'
 
 --[[
     USAGE INSTRUCTIONS:
